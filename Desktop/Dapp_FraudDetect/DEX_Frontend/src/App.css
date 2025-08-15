@@ -1,0 +1,52 @@
+.App {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Smooth transitions */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+/* Background particles */
+.bg-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Main content overlay */
+.content-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 0.25rem;
+  }
+}
